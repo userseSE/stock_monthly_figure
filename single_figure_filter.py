@@ -41,7 +41,7 @@ def is_monthly_platform(stock_code, cnt):
             return False  # 没有符合条件的激涨期
 
         # 3~6 个月的横盘整理
-        for j in range(3, 7):
+        for j in range(1, 6):
             platform_period = df.iloc[platform_start:platform_start + j]
             if len(platform_period) < j:
                 break
